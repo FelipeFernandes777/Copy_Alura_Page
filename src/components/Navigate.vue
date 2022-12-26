@@ -1,8 +1,8 @@
 <template>
   <div class="navigate_container">
-    <nav class="row">
-      <ul class="row">
-        <li class="row">
+    <nav>
+      <ul>
+        <li>
           <a class="font_navigate" href="#"
             >MEU APRENDIZADO
             <img class="icon_navigate_down" src="../assets/svg/down.svg" />
@@ -26,12 +26,12 @@
         alt="Bell"
         class="notification"
       />
-        <div class="points_container_person">
-          <PointsVue />
-        </div>
-        <div class="person_section">
-          <PersonVue />
-        </div>
+      <div class="points_container_person">
+        <PointsVue />
+      </div>
+      <div class="person_section">
+        <PersonVue />
+      </div>
     </nav>
   </div>
 </template>
@@ -90,15 +90,15 @@ li {
 }
 
 .icon_navigate_down {
-  width: 22px;
+  width: 10px;
   margin-left: 8px;
-  height: 22px;
+  height: 10px;
 }
 
 .notification {
   margin: 12px 25px 12px 12px;
-  width: 36px;
-  height: 36px;
+  width: 26px;
+  height: 26px;
 }
 
 .person_section {

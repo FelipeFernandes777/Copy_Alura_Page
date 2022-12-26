@@ -3,8 +3,8 @@
     <header>
       <HeaderVue />
     </header>
-    <main>
-
+    <main class="dashboard">
+      <MainContentVue />
     </main>
     <footer>
 
@@ -15,11 +15,22 @@
 <script>
 
 import HeaderVue from '@/templates/Header.vue';
+import MainContentVue from '@/templates/MainContent.vue';
 
 export default {
   name: "HomePage-Component",
   components: {
-    HeaderVue
+    HeaderVue,
+    MainContentVue,
   }
 }
 </script>
+
+<style>
+.dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+</style>

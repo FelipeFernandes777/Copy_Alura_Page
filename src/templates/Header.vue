@@ -38,6 +38,10 @@ export default {
   --bg-sub-header-color: #093364;
 }
 
+.header_component_conteiner {
+  margin-bottom: 40px;
+}
+
 .header_main_container {
   width: 100%;
   height: 80px;

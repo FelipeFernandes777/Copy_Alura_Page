@@ -2,9 +2,18 @@
   <div class="person_container_navigate">
     <div class="person_image">
       <a href="#">
-        <img src="../assets/img/images.jpeg" alt="Icon Person Photo" class="person" />
+        <img
+          src="../assets/img/images.jpeg"
+          alt="Icon Person Photo"
+          class="person"
+        />
         <span class="text_person">EMANUELLE</span>
-        <span><img src="../assets/svg/down.svg" alt="Down Arrow" class="down_arrow"></span>
+        <span
+          ><img
+            src="../assets/svg/down.svg"
+            alt="Down Arrow"
+            class="down_arrow"
+        /></span>
       </a>
     </div>
   </div>
@@ -17,8 +26,7 @@ export default {
 </script>
 
 <style scoped>
-
-.person_image a{
+.person_image a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,8 +48,7 @@ export default {
 }
 
 .down_arrow {
-  width: 22px;
-  height: 22px;
+  width: 12px;
+  height: 12px;
 }
-
 </style>

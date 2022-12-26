@@ -22,4 +22,7 @@ export default {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+body {
+  width: 100%;
+}
 </style>
