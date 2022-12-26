@@ -62,6 +62,7 @@ export default {
 }
 
 .color_xp {
+  font-weight: bold;
   color: #169ec2;
 }
 

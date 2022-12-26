@@ -2,32 +2,22 @@
   <div class="header_component_conteiner">
     <div class="header_main_container">
       <div class="content">
-        <div class="logo_header">
-          <img
-            src="../assets/svg/logo-alura.svg"
-            alt="Logo Alura"
-            class="logo_alura_icon"
-          />
-          <div class="search_container">
-            <img
-              src="../assets/svg/icons8-search.svg"
-              alt="search"
-              class="search"
-            />
-          </div>
-        </div>
+        <LogoVue />        
         <div class="navigation_header_container">
           <NavigateVue />
         </div>
       </div>
     </div>
     <section class="sub_header_component_container">
-      <TitleHeaderVue title="DASHBOARD" />
+      <div class="text_sub_header_container">
+        <TitleHeaderVue title="DASHBOARD" class="text_sub_header"/>
+      </div>
     </section>
   </div>
 </template>
 
 <script>
+import LogoVue from "@/components/Logo.vue";
 import NavigateVue from "@/components/Navigate.vue";
 import TitleHeaderVue from "@/components/TitleHeader.vue";
 
@@ -36,6 +26,7 @@ export default {
   components: {
     TitleHeaderVue,
     NavigateVue,
+    LogoVue,
   },
 };
 </script>
@@ -64,7 +55,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  width: 60%;
+  width: 63%;
 }
 
 .navigation_header_container {
@@ -72,34 +63,16 @@ export default {
   flex-direction: row;
 }
 
-.logo_header {
-  height: 80px;
+.sub_header_component_container {
+  width: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #093364;
 }
 
-.logo_alura_icon {
-  align-self: center;
-  width: 80px;
-  height: 36px;
-}
-
-.search_container {
-  width: 30px;
-  height: 30px;
-  margin-left: 25px;
-  border-radius: 4px;
-  background-color: #2a7ae4;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-start;
-}
-
-.search {
-  width: 19px;
-  height: 19px;
+.text_sub_header_container {
+  width: 63%;
 }
 </style>

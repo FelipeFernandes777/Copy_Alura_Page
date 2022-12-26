@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <HomePageVue/>
+    <HomePageVue />
   </div>
 </template>
 
 <script>
-
-import HomePageVue from './pages/HomePage.vue';
+import HomePageVue from "./pages/HomePage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HomePageVue
-  }
-}
+    HomePageVue,
+  },
+};
 </script>
 
 <style>
@@ -21,5 +20,6 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 </style>

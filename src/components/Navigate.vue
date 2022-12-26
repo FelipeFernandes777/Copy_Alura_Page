@@ -26,22 +26,25 @@
         alt="Bell"
         class="notification"
       />
-      <div class="personal_section">
         <div class="points_container_person">
           <PointsVue />
         </div>
-      </div>
+        <div class="person_section">
+          <PersonVue />
+        </div>
     </nav>
   </div>
 </template>
 
 <script>
+import PersonVue from "./Person.vue";
 import PointsVue from "./Points.vue";
 
 export default {
   name: "Navigate-Component",
   components: {
     PointsVue,
+    PersonVue,
   },
 };
 </script>
@@ -55,7 +58,7 @@ export default {
   justify-content: space-between;
   height: 80px;
   width: auto !important;
-  padding: 7px;
+  padding: 11px;
 }
 
 nav {
@@ -82,8 +85,8 @@ li {
   text-decoration: none;
   margin-left: 12px;
   color: #fff;
-  font-size: 15px;
-  font-weight: light;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .icon_navigate_down {
@@ -93,8 +96,15 @@ li {
 }
 
 .notification {
-  margin: 12px;
-  widows: 45px;
-  height: 45px;
+  margin: 12px 25px 12px 12px;
+  width: 36px;
+  height: 36px;
+}
+
+.person_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 </style>
