@@ -6,24 +6,21 @@
     <main class="dashboard">
       <MainContentVue />
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </div>
 </template>
 
 <script>
-
-import HeaderVue from '@/templates/Header.vue';
-import MainContentVue from '@/templates/MainContent.vue';
+import HeaderVue from "@/templates/Header.vue";
+import MainContentVue from "@/templates/MainContent.vue";
 
 export default {
   name: "HomePage-Component",
   components: {
     HeaderVue,
     MainContentVue,
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -32,5 +29,6 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color:  #f9fbfd;
 }
 </style>

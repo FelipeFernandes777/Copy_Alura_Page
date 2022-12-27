@@ -97,8 +97,8 @@ li {
 
 .notification {
   margin: 12px 25px 12px 12px;
-  width: 26px;
-  height: 26px;
+  width: 29px;
+  height: 29px;
 }
 
 .person_section {

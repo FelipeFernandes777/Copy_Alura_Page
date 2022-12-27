@@ -7,11 +7,12 @@
       <section class="ongoing_courses">
         <div class="main_course_ongoing">
           <CourseMainVue
-            pictureSrc="svg/projetos-de-algoritmos-1"
-            pictureAlt="Logo_Algoritmos_alura"
+            progess_percentage="66%"
+            pictureSrc="svg/projetos-de-algoritmos-1.svg"
+            pictureAlt="Algoritmos Logo"
             titleCourse="Algoritmos I: Selection, Insertion"
-            description="Aula atual: representando os produtos - 20min"
-            progess_percentage="55%"
+            descriptionBold="Aula atual: "
+            description="Representando os produtos - 20min"
           />
         </div>
         <div class="column_course_ongoing">
@@ -51,6 +52,10 @@ export default {
 </script>
 
 <style scoped>
+.main_course_ongoing {
+  width: 50%;
+}
+
 .in_courses {
   width: 600px;
   height: 660.91px;

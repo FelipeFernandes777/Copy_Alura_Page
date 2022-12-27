@@ -60,7 +60,7 @@ export default {
   padding: 10px 0;
 
   border-left: 4px solid #a475ef !important;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #eff1f9;
 }
 
 .logo_course {
