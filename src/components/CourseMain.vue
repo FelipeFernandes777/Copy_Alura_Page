@@ -86,7 +86,7 @@ export default {
 
 .bar_progess_color {
   height: 4px;
-  width: 50px;
+  width: 66%;
   background-color: #5dda7b;
 }
 

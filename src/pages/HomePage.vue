@@ -28,7 +28,8 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  background-color:  #f9fbfd;
+  background-color: #f9fbfd;
 }
 </style>

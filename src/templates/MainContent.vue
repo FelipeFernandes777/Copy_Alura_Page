@@ -1,7 +1,10 @@
 <template>
   <div class="main_content_container">
-    <main>
-      <div class="progess_courses">
+    <main class="flex">
+      <div class="progess_courses_ongoing">
+        <CourseOngoing />
+      </div>
+      <div class="progress_courses">
         <ProgressVue />
       </div>
     </main>
@@ -9,16 +12,20 @@
 </template>
 
 <script>
-
-import ProgressVue from '@/components/Progress.vue';
+import CourseOngoing from "@/components/CourseOngoing.vue";
+import ProgressVue from "@/components/Progress.vue";
 
 export default {
-  name: 'Main-Content-Component',
+  name: "Main-Content-Component",
   components: {
-    ProgressVue
-  }
-}
+    CourseOngoing,
+    ProgressVue,
+  },
+};
 </script>
 
 <style scoped>
+.flex {
+  display: flex;
+}
 </style>

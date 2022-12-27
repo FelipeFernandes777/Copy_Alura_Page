@@ -1,68 +1,32 @@
 <template>
-  <div class="in_courses">
-    <div class="container">
-      <div class="title_container">
-        <h2 class="title_course">Meus cursos em andamento</h2>
-      </div>
-      <section class="ongoing_courses">
-        <div class="main_course_ongoing">
-          <CourseMainVue
-            progess_percentage="66%"
-            pictureSrc="svg/projetos-de-algoritmos-1.svg"
-            pictureAlt="Algoritmos Logo"
-            titleCourse="Algoritmos I: Selection, Insertion"
-            descriptionBold="Aula atual: "
-            description="Representando os produtos - 20min"
-          />
-        </div>
-        <div class="column_course_ongoing">
-          <CourseVue
-            pictureSrc="svg/vue3-comecando-framework.svg"
-            pictureAlt="Vue3_Logo"
-            titleCourse="CURSO"
-            description="Vue3: explorando o framework"
-            progess_percentage="50%"
-          />
-          <AgilVue
-            pictureSrc="svg/fundamentos-agilidade.svg"
-            pictureAlt="Agile_Logo"
-            titleCourse="CURSO"
-            description="Agilidade: promovendo a transformação ágil"
-            progess_percentage="88%"
-          />
-        </div>
-      </section>
+  <div class="progress_card">
+    <div class="title_container">
+      <h2 class="title_course">Progresso em Formação</h2>
     </div>
+    <div class="progress_card_container"></div>
   </div>
 </template>
 
 <script>
-import AgilVue from "./Agil.vue";
-import CourseVue from "./Course.vue";
-import CourseMainVue from "./CourseMain.vue";
-
 export default {
-  name: "Progress-Courses-Container",
-  components: {
-    CourseMainVue,
-    CourseVue,
-    AgilVue,
-  },
+  name: "Progress-Container-Component",
+  components: {},
 };
 </script>
 
 <style scoped>
-.main_course_ongoing {
-  width: 50%;
+.progress_card {
+  margin-left: 30px;
 }
-
-.in_courses {
+.progress_card_container {
   width: 600px;
-  height: 660.91px;
+  border: 1px solid black;
+  height: 420px;
 }
 
 .title_course {
   color: #74849d;
   font-size: 22px;
+  margin-bottom: 18px;
 }
 </style>
